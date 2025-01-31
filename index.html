@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Header Section -->
-      <div class="header">
-        <img src="./logo/Logo.png" alt="Logo" />
-        <h1>For Individuals</h1>
-        <p>
-          Join our platform today and get access to amazing features. Sign up is
-          quick, easy, and free!
-        </p>
-      </div>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="./logo/Logo.png" alt="Platform Logo">
+            <h1>For Individuals</h1>
+            <p>Join our platform today and get access to amazing features. Sign up is quick, easy, and free!</p>
+        </header>
 
-      <!-- Form Section -->
-      <div class="form">
-        <form>
-          <!-- First Name and Last Name -->
-          <div class="row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                id="first-name"
-                placeholder="Enter your first name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                placeholder="Enter your last name"
-              />
-            </div>
-          </div>
+        <!-- Form Section -->
+        <section>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Enter your last name">
+                            </div>
+                        </div>
 
-          <!-- Gender and Date of Birth -->
-          <div class="row">
-            <div class="form-group">
-              <label for="gender">Gender</label>
-              <select id="gender">
-                <option>Select Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="dob">Date of Birth</label>
-              <input type="date" id="dob" />
-            </div>
-          </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender">
+                                    <option>Select Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob">
+                            </div>
+                        </div>
 
-          <!-- Weight and Height -->
-          <div class="row">
-            <div class="form-group">
-              <label for="weight">Weight (KG)</label>
-              <input type="number" id="weight" placeholder="Enter weight" />
-            </div>
-            <div class="form-group">
-              <label for="height">Height (CM)</label>
-              <input type="number" id="height" placeholder="Enter height" />
-            </div>
-          </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="weight">Weight (KG)</label>
+                                <input type="number" id="weight" placeholder="Enter weight">
+                            </div>
+                            <div class="form-group">
+                                <label for="height">Height (CM)</label>
+                                <input type="number" id="height" placeholder="Enter height">
+                            </div>
+                        </div>
+                    </fieldset>
 
-          <!-- Activity Level -->
-          <div class="form-group">
-            <label for="activity">Activity Level</label>
-            <select id="activity">
-              <option>Select Activity Level</option>
-              <option>Sedentary</option>
-              <option>Moderately Active</option>
-              <option>Very Active</option>
-            </select>
-          </div>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <div class="form-group">
+                            <label for="activity">Activity Level</label>
+                            <select id="activity">
+                                <option>Select Activity Level</option>
+                                <option>Sedentary</option>
+                                <option>Moderately Active</option>
+                                <option>Very Active</option>
+                            </select>
+                        </div>
 
-          <!-- Password -->
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password" />
-          </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter password">
+                        </div>
+                    </fieldset>
 
-          <!-- Submit Button -->
-          <button type="submit" class="btn">Register</button>
-          <p class="terms">
-            By clicking Register, you agree to our
-            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
-          </p>
-        </form>
-      </div>
-    </div>
-  </body>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn">Register</button>
+                    <p class="terms">
+                        By clicking Register, you agree to our
+                        <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
 </html>

@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Container Styling */
+/* Main Container Styling */
 .container {
   display: flex;
   flex-direction: row;
@@ -35,19 +35,19 @@ body {
 }
 
 /* Header Section */
-.header {
+header {
   flex: 1;
   text-align: left;
   padding: 20px;
 }
 
-.header img {
+header img {
   width: 80px;
   height: 80px;
   margin-bottom: 40px;
 }
 
-.header h1 {
+header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 900;
@@ -55,8 +55,7 @@ body {
   margin-bottom: 15px;
 }
 
-.header p {
-  font-family: 'Sofia Sans', sans-serif;
+header p {
   font-size: 16px;
   font-weight: 400;
   color: #666;
@@ -64,7 +63,7 @@ body {
 }
 
 /* Form Section */
-.form {
+section {
   flex: 1;
   background: white;
   padding: 30px;
@@ -74,6 +73,7 @@ body {
   width: 100%;
 }
 
+/* Form Group Styling */
 .form-group {
   margin-bottom: 20px;
 }
@@ -87,8 +87,21 @@ body {
   flex: 1;
 }
 
-/* Style for Labels */
-.form-group label {
+/* Fieldset and Legend Styling */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Label Styling */
+label {
   display: block;
   font-weight: 600;
   font-size: 14px;
@@ -96,32 +109,32 @@ body {
   margin-bottom: 5px;
 }
 
-/* Style for Input Fields and Placeholder */
-.form-group input,
-.form-group select {
+/* Input and Select Styling */
+input,
+select {
   width: 100%;
   padding: 12px;
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: #fff;
-  font-family: 'Sofia Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
-.form-group input::placeholder {
+input::placeholder {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   color: #aaa;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+input:focus,
+select:focus {
   border-color: #00bfa6;
   outline: none;
 }
 
-.btn {
+/* Button Styling */
+button {
   width: 100%;
   padding: 14px;
   background-color: #00bfa6;
@@ -133,10 +146,11 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
   background-color: #009f8c;
 }
 
+/* Terms and Conditions */
 .terms {
   text-align: center;
   font-size: 12px;
@@ -166,15 +180,15 @@ body {
     gap: 20px;
   }
 
-  .header {
+  header {
     text-align: center;
   }
 
-  .header img {
+  header img {
     margin: 0 auto;
   }
 
-  .form {
+  section {
     padding: 20px;
   }
 
